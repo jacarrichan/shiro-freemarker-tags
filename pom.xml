@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>shiro-freemarker-tags</artifactId>
 	<groupId>com.jagregory</groupId>
-	<version>0.1-SNAPSHOT</version>
+	<artifactId>shiro-freemarker-tags</artifactId>
+	<version>0.1</version>
 	<properties>
 		<github.global.server>github</github.global.server>
 	</properties>
@@ -52,7 +52,7 @@
 				<artifactId>site-maven-plugin</artifactId>
 				<version>0.9</version>
 				<configuration>
-					<message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
+					<message>Maven artifacts for ${artifactId}-${project.version}</message>  <!-- git commit message -->
 					<noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
 					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
 					<branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
